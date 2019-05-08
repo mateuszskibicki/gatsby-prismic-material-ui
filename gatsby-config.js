@@ -41,12 +41,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "config/typography.js"
-      }
-    },
-    {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: website.googleAnalyticsID
@@ -67,7 +61,6 @@ module.exports = {
       }
     },
     // Must be placed at the end
-    "gatsby-plugin-offline",
-    "gatsby-plugin-netlify"
+    "gatsby-plugin-offline"
   ]
 };
