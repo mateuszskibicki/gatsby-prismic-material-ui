@@ -2,8 +2,6 @@ require("dotenv").config({
   path: `.env`
 });
 
-//const prismicHtmlSerializer = require("./src/gatsby/htmlSerializer");
-
 const website = require("./config/website");
 
 const pathPrefix = website.pathPrefix === "/" ? "" : website.pathPrefix;
@@ -28,7 +26,6 @@ module.exports = {
   /* Plugins */
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-emotion",
     {
       resolve: "gatsby-source-prismic",
       options: {

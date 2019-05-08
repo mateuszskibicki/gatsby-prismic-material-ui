@@ -3,6 +3,8 @@ import React from "react";
 
 import { graphql, Link } from "gatsby";
 
+import { Layout } from "../components/layout/Layout";
+
 export const pageQuery = graphql`
   query IndexQuery {
     allPrismicSingleArticle {
@@ -25,13 +27,13 @@ export const pageQuery = graphql`
 const IndexPage = props => {
   console.log(props);
   return (
-    <>
+    <Layout>
       <h1>page</h1>
       <Link to="/blog/article">
         <button>article 1</button>
       </Link>
       <Link to="/blog/article-2">article 2</Link>
-    </>
+    </Layout>
   );
 };
 
