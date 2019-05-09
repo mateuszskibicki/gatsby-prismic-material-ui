@@ -16,11 +16,10 @@ const styles = theme => ({
     display: "flex",
     justifyContent: "center"
   },
-  content: {
+  wrapper: {
     width: 1280,
     background: grey[50],
     minHeight: "80vh",
-    margin: "4px 5px",
     boxShadow: theme.shadows[6],
     [theme.breakpoints.up("sm")]: {
       margin: "12px"
@@ -29,7 +28,19 @@ const styles = theme => ({
       margin: "16px"
     },
     [theme.breakpoints.up("lg")]: {
-      margin: "25px"
+      margin: "30px"
+    }
+  },
+  content: {
+    padding: "0.6rem",
+    [theme.breakpoints.up("sm")]: {
+      padding: "0.8rem"
+    },
+    [theme.breakpoints.up("md")]: {
+      padding: "1rem"
+    },
+    [theme.breakpoints.up("lg")]: {
+      padding: "1.2rem"
     }
   }
 });
@@ -53,9 +64,9 @@ const LayoutComponent = props => {
     <>
       <Head />
       <div className={classes.root}>
-        <div className={classes.content}>
+        <div className={classes.wrapper}>
           <Navbar />
-          {props.children}
+          <div className={classes.content}>{props.children}</div>
         </div>
       </div>
     </>

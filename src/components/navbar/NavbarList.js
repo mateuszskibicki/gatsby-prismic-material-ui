@@ -7,30 +7,63 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import DraftsIcon from "@material-ui/icons/Drafts";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
+import CloseIcon from "@material-ui/icons/Close";
+import HomeIcon from "@material-ui/icons/Home";
+import { Link } from "gatsby";
 
 const styles = theme => ({
   root: {
-    width: "100%",
-    backgroundColor: theme.palette.background.paper
+    width: "200px",
+    height: "auto",
+    maxHeight: "70vh",
+    overflow: "scroll",
+    zIndex: 2000,
+    backgroundColor: theme.palette.background.paper,
+    position: "absolute",
+    boxShadow: theme.shadows[4],
+    color: "#000"
+  },
+  exitIcon: {
+    justifyContent: "center"
+  },
+  linkButton: {
+    color: "#000"
   }
 });
 
 const NavbarList = props => {
-  const { classes } = props;
+  const { classes, setOpenNavbar } = props;
   return (
     <div className={classes.root}>
       <List component="nav">
-        <ListItem button>
-          <ListItemIcon>
-            <LibraryBooksIcon />
-          </ListItemIcon>
-          <ListItemText primary="Articles" />
+        <ListItem
+          button
+          className={classes.exitIcon}
+          onClick={() => setOpenNavbar()}
+        >
+          <CloseIcon color={"secondary"} />
         </ListItem>
+        <Link to="/">
+          <ListItem button onClick={() => setOpenNavbar()}>
+            <ListItemIcon>
+              <HomeIcon />
+            </ListItemIcon>
+            <ListItemText primary="Home" className={classes.linkButton} />
+          </ListItem>
+        </Link>
+        <Link to="/blog/99">
+          <ListItem button onClick={() => setOpenNavbar()}>
+            <ListItemIcon>
+              <LibraryBooksIcon />
+            </ListItemIcon>
+            <ListItemText primary="Articles" className={classes.linkButton} />
+          </ListItem>
+        </Link>
         <ListItem button>
           <ListItemIcon>
             <DraftsIcon />
           </ListItemIcon>
-          <ListItemText primary="Drafts" />
+          <ListItemText primary="Drafts" className={classes.linkButton} />
         </ListItem>
       </List>
     </div>
@@ -38,7 +71,8 @@ const NavbarList = props => {
 };
 
 NavbarList.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  setOpenNavbar: PropTypes.func.isRequired
 };
 
 export default withStyles(styles)(NavbarList);

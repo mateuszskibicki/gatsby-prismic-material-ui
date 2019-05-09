@@ -23,6 +23,26 @@ const IndexPage = props => {
   } = props;
 
   const SEO = { description: "123" };
+  const arrayy = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    87,
+    8,
+    9,
+    9,
+    9,
+    9678,
+    76,
+    7,
+    7,
+    6876,
+    43
+  ];
 
   return (
     <>
@@ -42,6 +62,13 @@ const IndexPage = props => {
             {edge.node.uid}
           </Button>
         </Link>
+      ))}
+      {arrayy.map(a => (
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+          placeat provident voluptatem reiciendis facere distinctio sunt eaque
+          suscipit iusto magni.
+        </p>
       ))}
     </>
   );
