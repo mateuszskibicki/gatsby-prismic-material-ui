@@ -9,6 +9,7 @@ const pathPrefix = website.pathPrefix === "/" ? "" : website.pathPrefix;
 module.exports = {
   /* General Information */
   pathPrefix: website.pathPrefix,
+  //pathPrefix: `/dummy`,
   siteMetadata: {
     siteUrl: website.url + pathPrefix, // For gatsby-plugin-sitemap
     pathPrefix,
@@ -26,6 +27,8 @@ module.exports = {
   /* Plugins */
   plugins: [
     "gatsby-plugin-react-helmet",
+    // in gatsby-config.js
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-prismic",
       options: {
@@ -58,6 +61,7 @@ module.exports = {
       }
     },
     // Must be placed at the end
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline",
+    "gatsby-plugin-layout"
   ]
 };

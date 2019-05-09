@@ -1,8 +1,9 @@
 import React from "react";
-// import PropTypes from 'prop-types'
-
+import PropTypes, { string } from "prop-types";
 import { graphql, Link } from "gatsby";
+import Button from "@material-ui/core/Button";
 
+import indexStyles from "./index.module.scss";
 import { Layout } from "../components/layout/Layout";
 
 export const pageQuery = graphql`
@@ -11,13 +12,6 @@ export const pageQuery = graphql`
       edges {
         node {
           uid
-          id
-          data {
-            date
-            seo_description {
-              text
-            }
-          }
         }
       }
     }
@@ -25,16 +19,39 @@ export const pageQuery = graphql`
 `;
 
 const IndexPage = props => {
-  console.log(props);
+  const {
+    data: { allPrismicSingleArticle }
+  } = props;
+
   return (
     <Layout>
-      <h1>page</h1>
-      <Link to="/blog/article">
-        <button>article 1</button>
-      </Link>
-      <Link to="/blog/article-2">article 2</Link>
+      {allPrismicSingleArticle.edges.map(edge => (
+        <Link
+          to={`/blog/${edge.node.uid}`}
+          key={edge.node.uid}
+          className={indexStyles.buttonLink}
+        >
+          <Button variant="outlined" color="secondary">
+            {edge.node.uid}
+          </Button>
+        </Link>
+      ))}
     </Layout>
   );
+};
+
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    allPrismicSingleArticle: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            uid: string
+          })
+        })
+      )
+    })
+  })
 };
 
 export default IndexPage;

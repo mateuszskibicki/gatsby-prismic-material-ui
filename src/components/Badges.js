@@ -75,7 +75,7 @@ const styles = theme => ({
 function SearchAppBar(props) {
   const { classes } = props;
   return (
-    <Grid container spacing={10}>
+    <Grid container spacing={16}>
       <Grid item xs={6}>
         <AppBar position="static" color="secondary" className={classes.root}>
           <Toolbar>
