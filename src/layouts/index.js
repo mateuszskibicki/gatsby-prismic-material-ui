@@ -5,6 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { withStyles } from "@material-ui/core/styles";
 import grey from "@material-ui/core/colors/grey";
 
+import "../styles/base/base.scss";
 import Navbar from "../components/navbar/Navbar";
 
 const styles = theme => ({
