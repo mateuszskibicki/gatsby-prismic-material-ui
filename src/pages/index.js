@@ -2,9 +2,7 @@ import React from "react";
 import PropTypes, { string } from "prop-types";
 import { graphql, Link } from "gatsby";
 import Button from "@material-ui/core/Button";
-
 import indexStyles from "./index.module.scss";
-import { Layout } from "../components/layout/Layout";
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -24,7 +22,7 @@ const IndexPage = props => {
   } = props;
 
   return (
-    <Layout>
+    <>
       {allPrismicSingleArticle.edges.map(edge => (
         <Link
           to={`/blog/${edge.node.uid}`}
@@ -36,7 +34,7 @@ const IndexPage = props => {
           </Button>
         </Link>
       ))}
-    </Layout>
+    </>
   );
 };
 

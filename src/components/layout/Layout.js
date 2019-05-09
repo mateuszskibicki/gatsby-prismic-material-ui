@@ -1,7 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Badges from "../Badges";
+import Badges from "../navbar/Navbar";
 export const Layout = props => {
   return (
     <>

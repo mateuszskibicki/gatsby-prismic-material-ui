@@ -15,7 +15,6 @@ export const pageQuery = graphql`
 `;
 
 const Article = ({ data }) => {
-  console.log(data);
   data.prismicSingleArticle.data.title.text;
   return (
     <>
