@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes, { string } from "prop-types";
 import { graphql, Link } from "gatsby";
 import Button from "@material-ui/core/Button";
+import { HeadComponent } from "../components/SEO/HeadComponent";
 import { Text } from "../components/common/Text";
+
 export const pageQuery = graphql`
   query IndexQuery {
     allPrismicSingleArticle {
@@ -20,8 +22,11 @@ const IndexPage = props => {
     data: { allPrismicSingleArticle }
   } = props;
 
+  const SEO = { description: "123" };
+
   return (
     <>
+      <HeadComponent SEO={SEO} />
       <Text>aaa</Text>
       <Text bold>aaa</Text>
       <Text h1>aaa</Text>

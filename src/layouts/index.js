@@ -34,23 +34,31 @@ const styles = theme => ({
   }
 });
 
+const Head = () => (
+  <>
+    <Helmet>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      />
+    </Helmet>
+    <CssBaseline />
+  </>
+);
+
 const LayoutComponent = props => {
   const { classes } = props;
-  console.log(props);
+
   return (
-    <div className={classes.root}>
-      <div className={classes.content}>
-        <Helmet>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-          />
-        </Helmet>
-        <CssBaseline />
-        <Navbar />
-        {props.children}
+    <>
+      <Head />
+      <div className={classes.root}>
+        <div className={classes.content}>
+          <Navbar />
+          {props.children}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

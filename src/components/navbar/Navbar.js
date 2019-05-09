@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -11,6 +11,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import deepOrange from "@material-ui/core/colors/deepOrange";
 
+import NavbarList from "./NavbarList";
+
 const styles = theme => {
   console.log(theme);
   return {
@@ -18,8 +20,7 @@ const styles = theme => {
       width: "100%",
       borderRadius: 0,
       backgroundColor: deepOrange[500],
-      color: "white",
-      marginBottom: "1rem"
+      color: "white"
     },
     grow: {
       flexGrow: 1
@@ -78,43 +79,53 @@ const styles = theme => {
   };
 };
 
-function Navbar(props) {
+const Navbar = props => {
   const { classes } = props;
+
+  const [isOpenNavbar, setOpenNavbar] = useState(false);
+  const handleClickNavbar = () => {
+    setOpenNavbar(!isOpenNavbar);
+  };
+
   return (
-    <AppBar position="static" className={classes.root}>
-      <Toolbar>
-        <IconButton
-          className={classes.menuButton}
-          color="inherit"
-          aria-label="Open drawer"
-        >
-          <MenuIcon />
-        </IconButton>
-        <Typography
-          className={classes.title}
-          variant="h6"
-          color="inherit"
-          noWrap
-        >
-          App starter
-        </Typography>
-        <div className={classes.grow} />
-        <div className={classes.search}>
-          <div className={classes.searchIcon}>
-            <SearchIcon />
+    <>
+      <AppBar position="static" className={classes.root}>
+        <Toolbar>
+          <IconButton
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="Open drawer"
+            onClick={handleClickNavbar}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography
+            className={classes.title}
+            variant="h6"
+            color="inherit"
+            noWrap
+          >
+            App starter
+          </Typography>
+          <div className={classes.grow} />
+          <div className={classes.search}>
+            <div className={classes.searchIcon}>
+              <SearchIcon />
+            </div>
+            <InputBase
+              placeholder="Search…"
+              classes={{
+                root: classes.inputRoot,
+                input: classes.inputInput
+              }}
+            />
           </div>
-          <InputBase
-            placeholder="Search…"
-            classes={{
-              root: classes.inputRoot,
-              input: classes.inputInput
-            }}
-          />
-        </div>
-      </Toolbar>
-    </AppBar>
+        </Toolbar>
+      </AppBar>
+      {isOpenNavbar && <NavbarList />}
+    </>
   );
-}
+};
 
 Navbar.propTypes = {
   classes: PropTypes.object.isRequired
