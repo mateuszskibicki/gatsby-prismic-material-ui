@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes, { string } from "prop-types";
 import { graphql, Link } from "gatsby";
-import Button from "@material-ui/core/Button";
-import { HeadComponent } from "../components/SEO/HeadComponent";
-import { Text } from "../components/common/Text";
+import { MastheadHomepage } from "../components/masthead/Masthead";
+//import { HeadComponent } from "../components/SEO/HeadComponent";
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -22,53 +21,14 @@ const IndexPage = props => {
     data: { allPrismicSingleArticle }
   } = props;
 
-  const SEO = { description: "123" };
-  const arrayy = [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    87,
-    8,
-    9,
-    9,
-    9,
-    9678,
-    76,
-    7,
-    7,
-    6876,
-    43
-  ];
-
   return (
     <>
-      <HeadComponent SEO={SEO} />
-      <Text>aaa</Text>
-      <Text bold>aaa</Text>
-      <Text h1>aaa</Text>
-      <Text h1 bold>
-        aaa
-      </Text>
-      <Text h5 bold>
-        aaa
-      </Text>
+      <MastheadHomepage />
+      {/* <HeadComponent SEO={SEO} /> */}
       {allPrismicSingleArticle.edges.map(edge => (
         <Link to={`/blog/${edge.node.uid}`} key={edge.node.uid}>
-          <Button variant="outlined" color="secondary">
-            {edge.node.uid}
-          </Button>
+          <button>{edge.node.uid}</button>
         </Link>
-      ))}
-      {arrayy.map(a => (
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
-          placeat provident voluptatem reiciendis facere distinctio sunt eaque
-          suscipit iusto magni.
-        </p>
       ))}
     </>
   );

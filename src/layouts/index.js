@@ -1,76 +1,50 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { withStyles } from "@material-ui/core/styles";
-import grey from "@material-ui/core/colors/grey";
-
 import "../styles/base/base.scss";
 import Navbar from "../components/navbar/Navbar";
-
-const styles = theme => ({
-  root: {
-    width: "100%",
-    minHeight: "100vh",
-    background: grey[300],
-    display: "flex",
-    justifyContent: "center"
-  },
-  wrapper: {
-    width: 1280,
-    background: grey[50],
-    minHeight: "80vh",
-    boxShadow: theme.shadows[6],
-    [theme.breakpoints.up("sm")]: {
-      margin: "12px"
-    },
-    [theme.breakpoints.up("md")]: {
-      margin: "16px"
-    },
-    [theme.breakpoints.up("lg")]: {
-      margin: "30px"
-    }
-  },
-  content: {
-    padding: "0.6rem",
-    [theme.breakpoints.up("sm")]: {
-      padding: "0.8rem"
-    },
-    [theme.breakpoints.up("md")]: {
-      padding: "1rem"
-    },
-    [theme.breakpoints.up("lg")]: {
-      padding: "1.2rem"
-    }
-  }
-});
+import "../styles/main.scss";
 
 const Head = () => (
-  <>
-    <Helmet>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-      />
-    </Helmet>
-    <CssBaseline />
-  </>
+  <Helmet>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>gatsby</title>
+  </Helmet>
 );
 
 const LayoutComponent = props => {
-  const { classes } = props;
-
   return (
-    <>
+    <div id="page-top">
       <Head />
-      <div className={classes.root}>
-        <div className={classes.wrapper}>
-          <Navbar />
-          <div className={classes.content}>{props.children}</div>
-        </div>
-      </div>
-    </>
+      <Navbar />
+
+      {props.children}
+
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossOrigin="anonymous"
+      />
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossOrigin="anonymous"
+      />
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossOrigin="anonymous"
+      />
+    </div>
   );
 };
 
-export default withStyles(styles)(LayoutComponent);
+export default LayoutComponent;
