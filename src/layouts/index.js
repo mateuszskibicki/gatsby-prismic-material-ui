@@ -48,7 +48,6 @@ const LayoutComponent = props => {
       <div id="page-top">
         <Head />
         <Navbar />
-
         {props.children}
         <Portfolio />
         <GetInTouch />
