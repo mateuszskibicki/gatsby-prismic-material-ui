@@ -56,11 +56,11 @@ const IndexPage = props => {
       />
       <MultipleMedia elementsArray={elementsArray} />
       {/* <HeadComponent SEO={SEO} /> */}
-      {allPrismicSingleArticle.edges.map(edge => (
+      {/* {allPrismicSingleArticle.edges.map(edge => (
         <Link to={`/blog/${edge.node.uid}`} key={edge.node.uid}>
           <button>{edge.node.uid}</button>
         </Link>
-      ))}
+      ))} */}
     </>
   );
 };

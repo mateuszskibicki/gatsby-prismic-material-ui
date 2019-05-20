@@ -9,7 +9,7 @@ const Navbar = props => {
   };
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-light">
+    <nav className="navbar navbar-expand-sm fixed-top" id="navbar">
       <div className="container">
         <a className="navbar-brand" href="#">
           <img src={logo} style={{ height: "40px" }} />
@@ -19,7 +19,7 @@ const Navbar = props => {
           type="button"
           onClick={onClickNavbar}
         >
-          <span className="navbar-toggler-icon" />
+          <i className="fas fa-bars text-primary" />
         </button>
         <div className={`navbar-collapse ${visible ? "" : "d-none"}`}>
           <ul className="navbar-nav ml-auto">

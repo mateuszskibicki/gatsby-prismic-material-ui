@@ -2,8 +2,6 @@ import React from "react";
 import img from "../../../static/img/masthead-homepage.jpg";
 import logo from "../../../static/img/logoPNG.png";
 
-console.log(img);
-
 export const MastheadHomepage = () => {
   return (
     <header

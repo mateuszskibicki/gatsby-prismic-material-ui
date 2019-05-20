@@ -1,0 +1,19 @@
+.portfolio-box {
+  height: 255px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio-box___title {
+  color: whitesmoke;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

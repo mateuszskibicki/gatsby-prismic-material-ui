@@ -1,8 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../styles/base/base.scss";
-import Navbar from "../components/navbar/Navbar";
 import "../styles/main.scss";
+import Navbar from "../components/navbar/Navbar";
+import { Portfolio } from "../components/portfolio/Portfolio";
+import GetInTouch from "../components/common/layout-components/GetInTouch";
+import Footer from "../components/footer/Footer";
 
 const Head = () => (
   <Helmet>
@@ -27,6 +30,21 @@ const Head = () => (
 );
 
 const LayoutComponent = props => {
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 60 ||
+      document.documentElement.scrollTop > 60
+    ) {
+      document.getElementById("navbar").style.backgroundColor = "whitesmoke";
+      document.getElementById("navbar").style.boxShadow =
+        "0 3px 8px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.12)";
+      //document.getElementById("navbar").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.backgroundColor = "transparent";
+      document.getElementById("navbar").style.boxShadow = "none";
+      //document.getElementById("navbar").style.fontSize = "35px";
+    }
+  }
   return (
     <>
       <div id="page-top">
@@ -34,6 +52,9 @@ const LayoutComponent = props => {
         <Navbar />
 
         {props.children}
+        <Portfolio />
+        <GetInTouch />
+        <Footer />
       </div>
       <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -50,6 +71,13 @@ const LayoutComponent = props => {
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossOrigin="anonymous"
       />
+      <script>
+        {
+          (window.onscroll = function() {
+            scrollFunction();
+          })
+        }
+      </script>
     </>
   );
 };
