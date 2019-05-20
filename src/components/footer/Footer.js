@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../../static/img/logoPNG.png";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="bg-light py-5">
       <div className="container">
@@ -15,5 +15,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

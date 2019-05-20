@@ -1,6 +1,6 @@
 import React from "react";
 
-function GetInTouch() {
+export const GetInTouch = () => {
   return (
     <section className="page-section" id="contact">
       <div className="container">
@@ -29,6 +29,4 @@ function GetInTouch() {
       </div>
     </section>
   );
-}
-
-export default GetInTouch;
+};

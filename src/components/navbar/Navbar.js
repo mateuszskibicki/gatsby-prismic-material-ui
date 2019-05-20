@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../../static/img/logoPNG.png";
 
-const Navbar = props => {
+export const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
   const onClickNavbar = () => {
@@ -38,23 +38,9 @@ const Navbar = props => {
                 Pricing
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link disabled"
-                href="#"
-                tabIndex="-1"
-                aria-disabled="true"
-              >
-                Disabled
-              </a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
   );
 };
-
-Navbar.propTypes = {};
-
-export default Navbar;
