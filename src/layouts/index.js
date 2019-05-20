@@ -15,6 +15,12 @@ const Head = () => (
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossOrigin="anonymous"
+    />
     <link rel="stylesheet" href="main.css" />
     <title>gatsby</title>
   </Helmet>
@@ -22,12 +28,13 @@ const Head = () => (
 
 const LayoutComponent = props => {
   return (
-    <div id="page-top">
-      <Head />
-      <Navbar />
+    <>
+      <div id="page-top">
+        <Head />
+        <Navbar />
 
-      {props.children}
-
+        {props.children}
+      </div>
       <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -43,7 +50,7 @@ const LayoutComponent = props => {
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossOrigin="anonymous"
       />
-    </div>
+    </>
   );
 };
 

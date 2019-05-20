@@ -1,46 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
+import logo from "../../../static/img/logoPNG.png";
 
 const Navbar = props => {
+  const [visible, setVisible] = useState(false);
+
+  const onClickNavbar = () => {
+    setVisible(!visible);
+  };
+
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-dark fixed-top py-3"
-      id="mainNav"
-    >
+    <nav className="navbar navbar-expand-sm navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand js-scroll-trigger" href="#page-top">
-          Start Bootstrap
+        <a className="navbar-brand" href="#">
+          <img src={logo} style={{ height: "40px" }} />
         </a>
         <button
-          className="navbar-toggler navbar-toggler-right"
+          className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={onClickNavbar}
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="navbar-nav ml-auto my-2 my-lg-0">
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#about">
-                About
+        <div className={`navbar-collapse ${visible ? "" : "d-none"}`}>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#services">
-                Services
+              <a className="nav-link" href="#">
+                Features
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#portfolio">
-                Portfolio
+              <a className="nav-link" href="#">
+                Pricing
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#contact">
-                Contact
+              <a
+                className="nav-link disabled"
+                href="#"
+                tabIndex="-1"
+                aria-disabled="true"
+              >
+                Disabled
               </a>
             </li>
           </ul>

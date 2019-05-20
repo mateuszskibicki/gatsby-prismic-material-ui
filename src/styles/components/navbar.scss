@@ -1,0 +1,18 @@
+.navbar {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-toggler {
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  padding: 2rem;
+  font-size: 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08), 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:visited,
+.navbar-toggler:hover {
+  outline: none;
+}
