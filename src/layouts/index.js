@@ -1,9 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import "../styles/base/base.scss";
 import "../styles/main.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import { Navbar } from "../components/navbar/Navbar";
 import { Portfolio } from "../components/portfolio/Portfolio";
 import { GetInTouch } from "../components/get-in-touch/GetInTouch";
@@ -26,7 +25,18 @@ const Head = () => (
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossOrigin="anonymous"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
+    {/* <link rel="stylesheet" href="main.css" /> */}
     <title>gatsby</title>
   </Helmet>
 );
