@@ -1,8 +1,14 @@
 .portfolio-box {
-  height: 255px;
+  height: 180px;
   width: auto;
   background-position: center;
   background-size: cover;
+
+  @media only screen and (min-width: 576px) {
+    & {
+      height: 200px;
+    }
+  }
 }
 
 .portfolio-box___title {

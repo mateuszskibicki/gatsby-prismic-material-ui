@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "../styles/base/base.scss";
 import "../styles/main.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Navbar } from "../components/navbar/Navbar";
 import { Portfolio } from "../components/portfolio/Portfolio";
 import { GetInTouch } from "../components/get-in-touch/GetInTouch";
@@ -30,19 +32,19 @@ const Head = () => (
 );
 
 const LayoutComponent = props => {
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 60 ||
-      document.documentElement.scrollTop > 60
-    ) {
-      document.getElementById("navbar").style.backgroundColor = "whitesmoke";
-      document.getElementById("navbar").style.boxShadow =
-        "0 3px 8px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.12)";
-    } else {
-      document.getElementById("navbar").style.backgroundColor = "transparent";
-      document.getElementById("navbar").style.boxShadow = "none";
-    }
-  }
+  // function scrollFunction() {
+  //   if (
+  //     document.body.scrollTop > 60 ||
+  //     document.documentElement.scrollTop > 60
+  //   ) {
+  //     document.getElementById("navbar").style.backgroundColor = "whitesmoke";
+  //     document.getElementById("navbar").style.boxShadow =
+  //       "0 3px 8px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.12)";
+  //   } else {
+  //     document.getElementById("navbar").style.backgroundColor = "transparent";
+  //     document.getElementById("navbar").style.boxShadow = "none";
+  //   }
+  // }
   return (
     <>
       <div id="page-top">
@@ -53,12 +55,12 @@ const LayoutComponent = props => {
         <GetInTouch />
         <Footer />
       </div>
-      <script>
+      {/* <script>
         {window !== undefined &&
           (window.onscroll = function() {
             scrollFunction();
           })}
-      </script>
+      </script> */}
     </>
   );
 };

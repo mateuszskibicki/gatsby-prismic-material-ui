@@ -25,7 +25,7 @@ export const Portfolio = () => {
                   alt="LS Interiors Logo Burnley Accrington"
                   style={{ width: "50px", paddingBottom: "10px" }}
                 />
-                <div className="project-category text-white-50">ABOUT</div>
+                <div className="project-category text-white">ABOUT</div>
                 <div className="project-name">
                   CONTACT LS INTERIORS AND MAKE YOUR HOME AMAZING
                 </div>
@@ -45,7 +45,7 @@ export const Portfolio = () => {
                   alt="LS Interiors Logo Burnley Accrington"
                   style={{ width: "50px", paddingBottom: "10px" }}
                 />
-                <div className="project-category text-white-50">KITCHEN</div>
+                <div className="project-category text-white">KITCHEN</div>
                 <div className="project-name">
                   CONTACT LS INTERIORS AND MAKE YOUR KITCHEN BEAUTIFUL
                 </div>
@@ -65,7 +65,7 @@ export const Portfolio = () => {
                   alt="LS Interiors Logo Burnley Accrington"
                   style={{ width: "50px", paddingBottom: "10px" }}
                 />
-                <div className="project-category text-white-50">BATHROOM</div>
+                <div className="project-category text-white">BATHROOM</div>
                 <div className="project-name">
                   CONTACT LS INTERIORS AND MAKE YOUR BATHROOM BEAUTIFUL
                 </div>
@@ -85,7 +85,7 @@ export const Portfolio = () => {
                   alt="LS Interiors Logo Burnley Accrington"
                   style={{ width: "50px", paddingBottom: "10px" }}
                 />
-                <div className="project-category text-white-50">DECORATING</div>
+                <div className="project-category text-white">DECORATING</div>
                 <div className="project-name">
                   CONTACT LS INTERIORS AND RENOVATE YOUR HOME
                 </div>
@@ -105,7 +105,7 @@ export const Portfolio = () => {
                   alt="LS Interiors Logo Burnley Accrington"
                   style={{ width: "50px", paddingBottom: "10px" }}
                 />
-                <div className="project-category text-white-50">JOINERY</div>
+                <div className="project-category text-white">JOINERY</div>
                 <div className="project-name">
                   CONTACT LS INTERIORS AND ORDER UNIQUE WOODEN FURNITURE
                 </div>
@@ -125,7 +125,7 @@ export const Portfolio = () => {
                   alt="LS Interiors Logo Burnley Accrington"
                   style={{ width: "50px", paddingBottom: "10px" }}
                 />
-                <div className="project-category text-white-50">SHOP</div>
+                <div className="project-category text-white">SHOP</div>
                 <div className="project-name">
                   VISIT SHOP AND BUY TOP QUALITY PRODUCTS
                 </div>

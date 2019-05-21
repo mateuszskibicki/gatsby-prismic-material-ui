@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 import logo from "../../../static/img/logoPNG.png";
 
 export const Navbar = () => {
@@ -9,11 +10,16 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-sm fixed-top" id="navbar">
+    <nav
+      className={`navbar navbar-expand-md navbar-light fixed-top ${visible &&
+        "navbar-mobile-visible"}`}
+      id="navbar"
+    >
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand">
           <img src={logo} style={{ height: "40px" }} />
-        </a>
+        </Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -23,20 +29,30 @@ export const Navbar = () => {
         </button>
         <div className={`navbar-collapse ${visible ? "" : "d-none"}`}>
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
+            <li className="nav-item">
+              <Link to="/kitchen" className="nav-link">
+                Kitchen
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Features
-              </a>
+              <Link to="/bathroom" className="nav-link">
+                Bathroom
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
+              <Link to="/decorating" className="nav-link">
+                Decorating
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/joinery" className="nav-link">
+                Joinery
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/shop" className="nav-link">
+                Shop
+              </Link>
             </li>
           </ul>
         </div>

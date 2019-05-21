@@ -9,7 +9,11 @@ export const Footer = () => {
           <img src={logo} width="50px" alt="LS Interiors Burnley logo" />
         </div>
         <div className="small text-center text-muted mt-4">
-          Copyright &copy; 2019 - LS Interiors
+          Copyright &copy; 2019 - LS Interiors <br />
+          <a href="tel:07538156690">07 538 156 690</a>
+          <a className="d-block" href="mailto:contact@yourwebsite.com">
+            ls.interiors.contact@gmail.com
+          </a>
         </div>
       </div>
     </footer>

@@ -9783,6 +9783,7 @@ hr.light {
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.16);
 }
 .page-section {
   padding: 4rem 0;
@@ -9914,7 +9915,7 @@ header.masthead h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(244, 98, 58, 0.8);
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   text-align: center;
