@@ -6,18 +6,16 @@ import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
 
 //photos
-import photoKitchen1 from "../../../static/img/kitchen/1.jpg";
-import photoKitchen2 from "../../../static/img/kitchen/2.jpg";
-import photoKitchen3 from "../../../static/img/kitchen/3.jpg";
-import photoKitchen4 from "../../../static/img/kitchen/4.jpg";
-import photoKitchen5 from "../../../static/img/kitchen/5.jpg";
-import photoKitchen6 from "../../../static/img/kitchen/6.jpg";
-import photoKitchen7 from "../../../static/img/kitchen/7.jpg";
-import photoKitchen8 from "../../../static/img/kitchen/8.jpg";
-import photoKitchen10 from "../../../static/img/kitchen/10.jpg";
+import photoBathroom1 from "../../../static/img/bathrooms/1.jpeg";
+import photoBathroom2 from "../../../static/img/bathrooms/2.jpeg";
+import photoBathroom3 from "../../../static/img/bathrooms/3.jpeg";
+import photoBathroom4 from "../../../static/img/bathrooms/4.jpeg";
+import photoBathroom5 from "../../../static/img/bathrooms/5.jpeg";
+import photoBathroom6 from "../../../static/img/bathrooms/6.jpeg";
+import photoBathroom7 from "../../../static/img/bathrooms/7.jpeg";
 
 export const pageQuery = graphql`
-  query aboutquery {
+  query bathroompage {
     allPrismicSingleArticle {
       edges {
         node {
@@ -28,38 +26,36 @@ export const pageQuery = graphql`
   }
 `;
 
-const KitchenPage = props => {
+const BathroomPage = props => {
   const {
     data: { allPrismicSingleArticle }
   } = props;
 
   const photosArray = [
-    photoKitchen1,
-    photoKitchen2,
-    photoKitchen3,
-    photoKitchen4,
-    photoKitchen5,
-    photoKitchen6,
-    photoKitchen7,
-    photoKitchen8,
-    photoKitchen10
+    photoBathroom1,
+    photoBathroom2,
+    photoBathroom3,
+    photoBathroom4,
+    photoBathroom5,
+    photoBathroom6,
+    photoBathroom7
   ];
 
   return (
     <div className="mt-4">
       <AboutSection
-        id="kitchen"
-        title="Looking for inspiration for your new kitchen?"
+        id="bathroom"
+        title="Looking for inspiration for your new bathroom?"
         description="I'VE BEEN WORKING IN THIS FIELD FOR 20 YEARS NOW. HAVING BEEN AND WORKED IN A LOT OF PLACES IN EUROPE, I LEARNED A LOT. HOW TO BE FAIR, PUNCTUAL, HARD-WORKING AND OPEN TO ANY OF MY CLIENTS' IDEAS AND SUGGESTIONS. I CAN MEET ANYONE'S NEEDS."
-        button_title="Make your kitchen unique!"
+        button_title="Make your bathroom unique!"
         button_url="#contact"
       />
-      <PhotoSlider photosArray={photosArray} name="kitchen" />
+      <PhotoSlider photosArray={photosArray} name="bathroom" />
     </div>
   );
 };
 
-KitchenPage.propTypes = {
+BathroomPage.propTypes = {
   data: PropTypes.shape({
     allPrismicSingleArticle: PropTypes.shape({
       edges: PropTypes.arrayOf(
@@ -73,4 +69,4 @@ KitchenPage.propTypes = {
   })
 };
 
-export default KitchenPage;
+export default BathroomPage;
