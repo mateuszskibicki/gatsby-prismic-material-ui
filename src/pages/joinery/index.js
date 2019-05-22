@@ -6,18 +6,17 @@ import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
 
 //photos
-import photoKitchen1 from "../../../static/img/kitchen/1.jpg";
-import photoKitchen2 from "../../../static/img/kitchen/2.jpg";
-import photoKitchen3 from "../../../static/img/kitchen/3.jpg";
-import photoKitchen4 from "../../../static/img/kitchen/4.jpg";
-import photoKitchen5 from "../../../static/img/kitchen/5.jpg";
-import photoKitchen6 from "../../../static/img/kitchen/6.jpg";
-import photoKitchen7 from "../../../static/img/kitchen/7.jpg";
-import photoKitchen8 from "../../../static/img/kitchen/8.jpg";
-import photoKitchen10 from "../../../static/img/kitchen/10.jpg";
+import photoJoinery1 from "../../../static/img/joinery/1.jpg";
+import photoJoinery2 from "../../../static/img/joinery/2.jpg";
+import photoJoinery3 from "../../../static/img/joinery/3.jpg";
+import photoJoinery4 from "../../../static/img/joinery/4.jpg";
+import photoJoinery5 from "../../../static/img/joinery/5.jpg";
+import photoJoinery6 from "../../../static/img/joinery/6.jpg";
+import photoJoinery7 from "../../../static/img/joinery/7.jpg";
+import photoJoinery8 from "../../../static/img/joinery/8.jpg";
 
 export const pageQuery = graphql`
-  query aboutquery {
+  query joineryquery {
     allPrismicSingleArticle {
       edges {
         node {
@@ -28,38 +27,37 @@ export const pageQuery = graphql`
   }
 `;
 
-const KitchenPage = props => {
+const JoineryPage = props => {
   const {
     data: { allPrismicSingleArticle }
   } = props;
 
   const photosArray = [
-    photoKitchen1,
-    photoKitchen2,
-    photoKitchen3,
-    photoKitchen4,
-    photoKitchen5,
-    photoKitchen6,
-    photoKitchen7,
-    photoKitchen8,
-    photoKitchen10
+    photoJoinery1,
+    photoJoinery2,
+    photoJoinery3,
+    photoJoinery4,
+    photoJoinery5,
+    photoJoinery6,
+    photoJoinery7,
+    photoJoinery8
   ];
 
   return (
     <div className="mt-5">
       <AboutSection
-        id="kitchen"
-        title="Looking for inspiration for your new kitchen?"
+        id="joinery"
+        title="Looking for inspiration and new wooden furniture?"
         description="I'VE BEEN WORKING IN THIS FIELD FOR 20 YEARS NOW. HAVING BEEN AND WORKED IN A LOT OF PLACES IN EUROPE, I LEARNED A LOT. HOW TO BE FAIR, PUNCTUAL, HARD-WORKING AND OPEN TO ANY OF MY CLIENTS' IDEAS AND SUGGESTIONS. I CAN MEET ANYONE'S NEEDS."
-        button_title="Make your kitchen unique!"
+        button_title="Make your home amazing with unique furniture!"
         button_url="#contact"
       />
-      <PhotoSlider photosArray={photosArray} name="kitchen" />
+      <PhotoSlider photosArray={photosArray} name="joinery" />
     </div>
   );
 };
 
-KitchenPage.propTypes = {
+JoineryPage.propTypes = {
   data: PropTypes.shape({
     allPrismicSingleArticle: PropTypes.shape({
       edges: PropTypes.arrayOf(
@@ -73,4 +71,4 @@ KitchenPage.propTypes = {
   })
 };
 
-export default KitchenPage;
+export default JoineryPage;

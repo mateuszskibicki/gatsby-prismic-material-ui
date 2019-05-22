@@ -5,8 +5,14 @@ import logo from "../../../static/img/logoPNG.png";
 export const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
-  const onClickNavbar = () => {
+  const onClickOpenNavbar = () => {
     setVisible(!visible);
+  };
+
+  const onClickChangeURL = () => {
+    if (visible) setVisible(!visible);
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
   return (
@@ -16,31 +22,39 @@ export const Navbar = () => {
       id="navbar"
     >
       <div className="container">
-        <Link to="/" className="navbar-brand" onClick={onClickNavbar}>
+        <Link to="/" className="navbar-brand" onClick={onClickChangeURL}>
           <img src={logo} style={{ height: "40px" }} />
         </Link>
 
         <button
           className="navbar-toggler"
           type="button"
-          onClick={onClickNavbar}
+          onClick={onClickOpenNavbar}
         >
           <i className="fas fa-bars text-primary" />
         </button>
         <div className={`navbar-collapse ${visible ? "" : "d-none"}`}>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link" onClick={onClickNavbar}>
+              <Link to="/" className="nav-link" onClick={onClickChangeURL}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/kitchen" className="nav-link" onClick={onClickNavbar}>
+              <Link
+                to="/kitchen"
+                className="nav-link"
+                onClick={onClickChangeURL}
+              >
                 Kitchen
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/bathroom" className="nav-link" onClick={onClickNavbar}>
+              <Link
+                to="/bathroom"
+                className="nav-link"
+                onClick={onClickChangeURL}
+              >
                 Bathroom
               </Link>
             </li>
@@ -48,23 +62,31 @@ export const Navbar = () => {
               <Link
                 to="/decorating"
                 className="nav-link"
-                onClick={onClickNavbar}
+                onClick={onClickChangeURL}
               >
                 Decorating
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/joinery" className="nav-link" onClick={onClickNavbar}>
+              <Link
+                to="/joinery"
+                className="nav-link"
+                onClick={onClickChangeURL}
+              >
                 Joinery
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/shop" className="nav-link" onClick={onClickNavbar}>
+              <Link to="/shop" className="nav-link" onClick={onClickChangeURL}>
                 Shop
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={onClickNavbar}>
+              <Link
+                to="/contact"
+                className="nav-link"
+                onClick={onClickChangeURL}
+              >
                 Contact
               </Link>
             </li>

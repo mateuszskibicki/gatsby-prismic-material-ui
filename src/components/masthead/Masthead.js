@@ -27,7 +27,7 @@ export const MastheadHomepage = () => {
               <img src={logo} alt="LS Interiors" className="masthead__img" />
             </div>
             <h1 className="text-uppercase text-white font-weight-bold">
-              <strong>LS INTERIOS</strong> <br />
+              <strong>LS INTERIORS</strong> <br />
               Enjoy your home from the inside.
             </h1>
             <hr className="divider my-4" />

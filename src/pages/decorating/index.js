@@ -6,18 +6,13 @@ import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
 
 //photos
-import photoKitchen1 from "../../../static/img/kitchen/1.jpg";
-import photoKitchen2 from "../../../static/img/kitchen/2.jpg";
-import photoKitchen3 from "../../../static/img/kitchen/3.jpg";
-import photoKitchen4 from "../../../static/img/kitchen/4.jpg";
-import photoKitchen5 from "../../../static/img/kitchen/5.jpg";
-import photoKitchen6 from "../../../static/img/kitchen/6.jpg";
-import photoKitchen7 from "../../../static/img/kitchen/7.jpg";
-import photoKitchen8 from "../../../static/img/kitchen/8.jpg";
-import photoKitchen10 from "../../../static/img/kitchen/10.jpg";
+import photoDecorating1 from "../../../static/img/decorating/1.jpg";
+import photoDecorating2 from "../../../static/img/decorating/2.jpg";
+import photoDecorating3 from "../../../static/img/decorating/3.jpg";
+import photoDecorating4 from "../../../static/img/decorating/4.jpg";
 
 export const pageQuery = graphql`
-  query aboutquery {
+  query decorating {
     allPrismicSingleArticle {
       edges {
         node {
@@ -28,38 +23,33 @@ export const pageQuery = graphql`
   }
 `;
 
-const KitchenPage = props => {
+const DecoratingPage = props => {
   const {
     data: { allPrismicSingleArticle }
   } = props;
 
   const photosArray = [
-    photoKitchen1,
-    photoKitchen2,
-    photoKitchen3,
-    photoKitchen4,
-    photoKitchen5,
-    photoKitchen6,
-    photoKitchen7,
-    photoKitchen8,
-    photoKitchen10
+    photoDecorating1,
+    photoDecorating2,
+    photoDecorating3,
+    photoDecorating4
   ];
 
   return (
     <div className="mt-5">
       <AboutSection
-        id="kitchen"
-        title="Looking for inspiration for your new kitchen?"
+        id="decorating"
+        title="Looking for inspiration for decoration?"
         description="I'VE BEEN WORKING IN THIS FIELD FOR 20 YEARS NOW. HAVING BEEN AND WORKED IN A LOT OF PLACES IN EUROPE, I LEARNED A LOT. HOW TO BE FAIR, PUNCTUAL, HARD-WORKING AND OPEN TO ANY OF MY CLIENTS' IDEAS AND SUGGESTIONS. I CAN MEET ANYONE'S NEEDS."
-        button_title="Make your kitchen unique!"
+        button_title="Make your renovation cheap and professional!"
         button_url="#contact"
       />
-      <PhotoSlider photosArray={photosArray} name="kitchen" />
+      <PhotoSlider photosArray={photosArray} name="decorating" />
     </div>
   );
 };
 
-KitchenPage.propTypes = {
+DecoratingPage.propTypes = {
   data: PropTypes.shape({
     allPrismicSingleArticle: PropTypes.shape({
       edges: PropTypes.arrayOf(
@@ -73,4 +63,4 @@ KitchenPage.propTypes = {
   })
 };
 
-export default KitchenPage;
+export default DecoratingPage;

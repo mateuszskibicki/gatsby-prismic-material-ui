@@ -1,8 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../styles/main.scss";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import { Navbar } from "../components/navbar/Navbar";
 import { Portfolio } from "../components/portfolio/Portfolio";
 import { GetInTouch } from "../components/get-in-touch/GetInTouch";
@@ -36,42 +34,20 @@ const Head = () => (
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
     />
-    {/* <link rel="stylesheet" href="main.css" /> */}
-    <title>gatsby</title>
+    <title>LS Interiors</title>
   </Helmet>
 );
 
 const LayoutComponent = props => {
-  // function scrollFunction() {
-  //   if (
-  //     document.body.scrollTop > 60 ||
-  //     document.documentElement.scrollTop > 60
-  //   ) {
-  //     document.getElementById("navbar").style.backgroundColor = "whitesmoke";
-  //     document.getElementById("navbar").style.boxShadow =
-  //       "0 3px 8px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.12)";
-  //   } else {
-  //     document.getElementById("navbar").style.backgroundColor = "transparent";
-  //     document.getElementById("navbar").style.boxShadow = "none";
-  //   }
-  // }
   return (
-    <>
-      <div id="page-top">
-        <Head />
-        <Navbar />
-        {props.children}
-        <Portfolio />
-        <GetInTouch />
-        <Footer />
-      </div>
-      {/* <script>
-        {window !== undefined &&
-          (window.onscroll = function() {
-            scrollFunction();
-          })}
-      </script> */}
-    </>
+    <div id="page-top">
+      <Head />
+      <Navbar />
+      {props.children}
+      <Portfolio />
+      <GetInTouch />
+      <Footer />
+    </div>
   );
 };
 

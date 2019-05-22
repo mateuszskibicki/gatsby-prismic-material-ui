@@ -82,7 +82,7 @@ export const PhotoSlider = props => {
         <div
           className="modal modal-photo fade show"
           id="exampleModal"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
