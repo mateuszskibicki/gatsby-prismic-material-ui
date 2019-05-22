@@ -90,63 +90,72 @@ const KitchenPage = props => {
                 <img
                   src={photoKitchen1}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
               <div>
                 <img
                   src={photoKitchen2}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
               <div>
                 <img
                   src={photoKitchen3}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
               <div>
                 <img
                   src={photoKitchen4}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
               <div>
                 <img
                   src={photoKitchen5}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
               <div>
                 <img
                   src={photoKitchen6}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
               <div>
                 <img
                   src={photoKitchen7}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
               <div>
                 <img
                   src={photoKitchen8}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
               <div>
                 <img
                   src={photoKitchen10}
                   alt="LS Interiors bathrooms Burnley Blackburn Accrington"
-                  className="img-fluid"
+                  className="img-fluid m-auto"
+                  style={{ maxHeight: "300px" }}
                 />
               </div>
             </Slider>

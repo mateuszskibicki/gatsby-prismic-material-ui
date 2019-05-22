@@ -16,7 +16,7 @@ export const Navbar = () => {
       id="navbar"
     >
       <div className="container">
-        <Link to="/" className="navbar-brand">
+        <Link to="/" className="navbar-brand" onClick={onClickNavbar}>
           <img src={logo} style={{ height: "40px" }} />
         </Link>
 
@@ -30,28 +30,42 @@ export const Navbar = () => {
         <div className={`navbar-collapse ${visible ? "" : "d-none"}`}>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link to="/kitchen" className="nav-link">
+              <Link to="/" className="nav-link" onClick={onClickNavbar}>
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/kitchen" className="nav-link" onClick={onClickNavbar}>
                 Kitchen
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/bathroom" className="nav-link">
+              <Link to="/bathroom" className="nav-link" onClick={onClickNavbar}>
                 Bathroom
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/decorating" className="nav-link">
+              <Link
+                to="/decorating"
+                className="nav-link"
+                onClick={onClickNavbar}
+              >
                 Decorating
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/joinery" className="nav-link">
+              <Link to="/joinery" className="nav-link" onClick={onClickNavbar}>
                 Joinery
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/shop" className="nav-link">
+              <Link to="/shop" className="nav-link" onClick={onClickNavbar}>
                 Shop
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link" onClick={onClickNavbar}>
+                Contact
               </Link>
             </li>
           </ul>
