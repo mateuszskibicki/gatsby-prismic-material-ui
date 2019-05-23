@@ -21,7 +21,7 @@ export const GetInTouch = () => {
           </div>
           <div className="col-lg-4 mr-auto text-center mb-5 mb-lg-0 d-flex flex-column justify-content-center">
             <i className="fas fa-envelope fa-3x mb-3 text-muted" />
-            <a className="d-block" href="mailto:contact@yourwebsite.com">
+            <a className="d-block" href="mailto:ls.interiors.contact@gmail.com">
               ls.interiors.contact@gmail.com
             </a>
           </div>
