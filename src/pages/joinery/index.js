@@ -6,14 +6,14 @@ import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
 
 //photos
-import photoJoinery1 from "../../../static/img/joinery/1.jpg";
-import photoJoinery2 from "../../../static/img/joinery/2.jpg";
-import photoJoinery3 from "../../../static/img/joinery/3.jpg";
-import photoJoinery4 from "../../../static/img/joinery/4.jpg";
-import photoJoinery5 from "../../../static/img/joinery/5.jpg";
-import photoJoinery6 from "../../../static/img/joinery/6.jpg";
-import photoJoinery7 from "../../../static/img/joinery/7.jpg";
-import photoJoinery8 from "../../../static/img/joinery/8.jpg";
+import photoJoinery1 from "../../../static/img/joinery/joinery1.jpg";
+import photoJoinery2 from "../../../static/img/joinery/joinery2.jpg";
+import photoJoinery3 from "../../../static/img/joinery/joinery3.jpg";
+import photoJoinery4 from "../../../static/img/joinery/joinery4.jpg";
+import photoJoinery5 from "../../../static/img/joinery/joinery5.jpg";
+import photoJoinery6 from "../../../static/img/joinery/joinery6.jpg";
+import photoJoinery7 from "../../../static/img/joinery/joinery7.jpg";
+import photoJoinery8 from "../../../static/img/joinery/joinery8.jpg";
 
 export const pageQuery = graphql`
   query joineryquery {

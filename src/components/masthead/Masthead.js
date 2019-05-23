@@ -32,17 +32,25 @@ export const MastheadHomepage = () => {
             </h1>
             <hr className="divider my-4" />
           </div>
-          <div className="col-lg-8 align-self-baseline">
+          <div className="col-lg-8 align-self-baseline d-flex flex-column">
             <p className="text-white-75 font-weight-light mb-5 text-uppercase">
               GET IN LS INTERIORS AND DISCOVER BEAUTY OF UNIQE HOME.
               <br />
               20+ years of experience
             </p>
             <a
-              className="btn btn-primary btn-xl js-scroll-trigger"
+              className="btn btn-primary btn-xl js-scroll-trigger w-50 m-auto"
               href="#about"
             >
               Find Out More
+            </a>
+            <div className="mb-3" />
+            <a
+              className="btn btn-info btn-xl js-scroll-trigger w-50 m-auto"
+              href="https://www.facebook.com/LS-Interiors-1591384234508819/"
+              target="_blank"
+            >
+              Find Me On Facebook
             </a>
           </div>
         </div>

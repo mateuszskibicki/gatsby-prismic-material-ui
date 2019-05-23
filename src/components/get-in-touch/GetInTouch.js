@@ -19,10 +19,20 @@ export const GetInTouch = () => {
             <i className="fas fa-phone fa-3x mb-3 text-muted" />
             <a href="tel:07538156690">07 538 156 690</a>
           </div>
-          <div className="col-lg-4 mr-auto text-center">
-            <i className="fas fa-envelope fa-3x mb-3 text-muted d-flex flex-column justify-content-center" />
+          <div className="col-lg-4 mr-auto text-center mb-5 mb-lg-0 d-flex flex-column justify-content-center">
+            <i className="fas fa-envelope fa-3x mb-3 text-muted" />
             <a className="d-block" href="mailto:contact@yourwebsite.com">
               ls.interiors.contact@gmail.com
+            </a>
+          </div>
+          <div className="col-lg-4 mr-auto text-center d-flex flex-column justify-content-center">
+            <i className="fab fa-facebook fa-3x mb-3 text-muted" />
+            <a
+              className="d-block"
+              href="https://www.facebook.com/LS-Interiors-1591384234508819/"
+              target="_blank"
+            >
+              Facebook
             </a>
           </div>
         </div>

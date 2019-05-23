@@ -14,6 +14,13 @@ export const Footer = () => {
           <a className="d-block" href="mailto:contact@yourwebsite.com">
             ls.interiors.contact@gmail.com
           </a>
+          <a
+            className="d-block"
+            href="https://www.facebook.com/LS-Interiors-1591384234508819/"
+            target="_blank"
+          >
+            Facebook
+          </a>
         </div>
       </div>
     </footer>

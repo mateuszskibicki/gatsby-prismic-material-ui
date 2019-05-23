@@ -6,15 +6,15 @@ import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
 
 //photos
-import photoKitchen1 from "../../../static/img/kitchen/1.jpg";
-import photoKitchen2 from "../../../static/img/kitchen/2.jpg";
-import photoKitchen3 from "../../../static/img/kitchen/3.jpg";
-import photoKitchen4 from "../../../static/img/kitchen/4.jpg";
-import photoKitchen5 from "../../../static/img/kitchen/5.jpg";
-import photoKitchen6 from "../../../static/img/kitchen/6.jpg";
-import photoKitchen7 from "../../../static/img/kitchen/7.jpg";
-import photoKitchen8 from "../../../static/img/kitchen/8.jpg";
-import photoKitchen10 from "../../../static/img/kitchen/10.jpg";
+import photoKitchen1 from "../../../static/img/kitchen/kitchen1.jpg";
+import photoKitchen2 from "../../../static/img/kitchen/kitchen2.jpg";
+import photoKitchen3 from "../../../static/img/kitchen/kitchen3.jpg";
+import photoKitchen4 from "../../../static/img/kitchen/kitchen4.jpg";
+import photoKitchen5 from "../../../static/img/kitchen/kitchen5.jpg";
+import photoKitchen6 from "../../../static/img/kitchen/kitchen6.jpg";
+import photoKitchen7 from "../../../static/img/kitchen/kitchen7.jpg";
+import photoKitchen8 from "../../../static/img/kitchen/kitchen8.jpg";
+import photoKitchen10 from "../../../static/img/kitchen/kitchen9.jpg";
 
 export const pageQuery = graphql`
   query aboutquery {
