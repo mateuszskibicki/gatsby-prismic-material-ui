@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
 import { AboutSection } from "../../components/about/AboutSection";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
@@ -14,22 +12,8 @@ import photoBathroom5 from "../../../static/img/bathrooms/5.jpeg";
 import photoBathroom6 from "../../../static/img/bathrooms/6.jpeg";
 import photoBathroom7 from "../../../static/img/bathrooms/7.jpeg";
 
-export const pageQuery = graphql`
-  query bathroompage {
-    allPrismicSingleArticle {
-      edges {
-        node {
-          uid
-        }
-      }
-    }
-  }
-`;
-
 const BathroomPage = props => {
-  const {
-    data: { allPrismicSingleArticle }
-  } = props;
+  props;
 
   const photosArray = [
     photoBathroom1,
@@ -53,20 +37,6 @@ const BathroomPage = props => {
       <PhotoSlider photosArray={photosArray} name="bathroom" />
     </div>
   );
-};
-
-BathroomPage.propTypes = {
-  data: PropTypes.shape({
-    allPrismicSingleArticle: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            uid: PropTypes.string
-          })
-        })
-      )
-    })
-  })
 };
 
 export default BathroomPage;

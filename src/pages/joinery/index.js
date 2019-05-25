@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
 import { AboutSection } from "../../components/about/AboutSection";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
@@ -15,23 +13,7 @@ import photoJoinery6 from "../../../static/img/joinery/joinery6.jpg";
 import photoJoinery7 from "../../../static/img/joinery/joinery7.jpg";
 import photoJoinery8 from "../../../static/img/joinery/joinery8.jpg";
 
-export const pageQuery = graphql`
-  query joineryquery {
-    allPrismicSingleArticle {
-      edges {
-        node {
-          uid
-        }
-      }
-    }
-  }
-`;
-
-const JoineryPage = props => {
-  const {
-    data: { allPrismicSingleArticle }
-  } = props;
-
+const JoineryPage = () => {
   const photosArray = [
     photoJoinery1,
     photoJoinery2,
@@ -55,20 +37,6 @@ const JoineryPage = props => {
       <PhotoSlider photosArray={photosArray} name="joinery" />
     </div>
   );
-};
-
-JoineryPage.propTypes = {
-  data: PropTypes.shape({
-    allPrismicSingleArticle: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            uid: PropTypes.string
-          })
-        })
-      )
-    })
-  })
 };
 
 export default JoineryPage;

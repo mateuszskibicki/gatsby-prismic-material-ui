@@ -23,7 +23,11 @@ export const Navbar = () => {
     >
       <div className="container">
         <Link to="/" className="navbar-brand" onClick={onClickChangeURL}>
-          <img src={logo} style={{ height: "40px" }} />
+          <img
+            src={logo}
+            style={{ height: "40px" }}
+            alt="LS Interiors Logo Bunrley Home Beds Bathrooms"
+          />
         </Link>
 
         <button

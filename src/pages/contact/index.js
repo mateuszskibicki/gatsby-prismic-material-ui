@@ -1,27 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
 import { AboutSection } from "../../components/about/AboutSection";
 
 //import { HeadComponent } from "../components/SEO/HeadComponent";
 
-export const pageQuery = graphql`
-  query contactpage {
-    allPrismicSingleArticle {
-      edges {
-        node {
-          uid
-        }
-      }
-    }
-  }
-`;
-
-const ContactPage = props => {
-  const {
-    data: { allPrismicSingleArticle }
-  } = props;
-
+const ContactPage = () => {
   return (
     <div className="mt-5">
       <AboutSection
@@ -33,20 +15,6 @@ const ContactPage = props => {
       />
     </div>
   );
-};
-
-ContactPage.propTypes = {
-  data: PropTypes.shape({
-    allPrismicSingleArticle: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            uid: PropTypes.string
-          })
-        })
-      )
-    })
-  })
 };
 
 export default ContactPage;

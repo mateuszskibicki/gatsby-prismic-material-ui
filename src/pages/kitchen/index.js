@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
 import { AboutSection } from "../../components/about/AboutSection";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
@@ -16,23 +14,7 @@ import photoKitchen7 from "../../../static/img/kitchen/kitchen7.jpg";
 import photoKitchen8 from "../../../static/img/kitchen/kitchen8.jpg";
 import photoKitchen10 from "../../../static/img/kitchen/kitchen9.jpg";
 
-export const pageQuery = graphql`
-  query aboutquery {
-    allPrismicSingleArticle {
-      edges {
-        node {
-          uid
-        }
-      }
-    }
-  }
-`;
-
-const KitchenPage = props => {
-  const {
-    data: { allPrismicSingleArticle }
-  } = props;
-
+const KitchenPage = () => {
   const photosArray = [
     photoKitchen1,
     photoKitchen2,
@@ -57,20 +39,6 @@ const KitchenPage = props => {
       <PhotoSlider photosArray={photosArray} name="kitchen" />
     </div>
   );
-};
-
-KitchenPage.propTypes = {
-  data: PropTypes.shape({
-    allPrismicSingleArticle: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            uid: PropTypes.string
-          })
-        })
-      )
-    })
-  })
 };
 
 export default KitchenPage;
