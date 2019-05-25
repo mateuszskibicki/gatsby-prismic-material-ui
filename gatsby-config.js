@@ -10,20 +10,20 @@ module.exports = {
   /* General Information */
   pathPrefix: website.pathPrefix,
   //pathPrefix: `/dummy`,
-  siteMetadata: {
-    siteUrl: website.url + pathPrefix, // For gatsby-plugin-sitemap
-    pathPrefix,
-    title: website.title,
-    titleAlt: website.titleAlt,
-    description: website.description,
-    banner: website.logo,
-    headline: website.headline,
-    siteLanguage: website.siteLanguage,
-    ogLanguage: website.ogLanguage,
-    author: website.author,
-    twitter: website.twitter,
-    facebook: website.facebook
-  },
+  // siteMetadata: {
+  //   siteUrl: website.url + pathPrefix, // For gatsby-plugin-sitemap
+  //   pathPrefix,
+  //   title: website.title,
+  //   titleAlt: website.titleAlt,
+  //   description: website.description,
+  //   banner: website.logo,
+  //   headline: website.headline,
+  //   siteLanguage: website.siteLanguage,
+  //   ogLanguage: website.ogLanguage,
+  //   author: website.author,
+  //   twitter: website.twitter,
+  //   facebook: website.facebook
+  // },
   /* Plugins */
   plugins: [
     "gatsby-plugin-react-helmet",

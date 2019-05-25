@@ -10,7 +10,7 @@ module.exports = {
   logo: "/logos/logo-1024.png", // Used for SEO
   ogLanguage: "en_US", // Facebook Language
   // JSONLD / Manifest
-  favicon: "src/favicon.png", // Used for manifest favicon generation
+  //favicon: "src/favicon.png", // Used for manifest favicon generation
   shortName: "Prismic", // shortname for manifest. MUST be shorter than 12 characters
   author: "LekoArts", // Author for schemaORGJSONLD
   themeColor: "#3D63AE",

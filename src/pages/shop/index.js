@@ -1,15 +1,14 @@
 import React from "react";
-//import PropTypes from "prop-types";
 import { MastheadShop } from "../../components/masthead/Masthead";
 import { BedCard } from "../../components/shop/BedCard";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
 
 const ShopPage = () => {
   return (
-    <div className="mt-5" className="shop-page">
+    <div className="mt-5 shop-page">
       <MastheadShop />
       <div className="container mt-5 mb-5">
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="col-12 text-center mb-3">
             <h3 className="display-4">Beds and mattresses</h3>
           </div>
@@ -56,6 +55,22 @@ const ShopPage = () => {
             title="Majestic Embrace Luxury Pocket 10000"
             url="majestic10000"
             description="Luxurious natural Viscose damask cover with the softest surface feel. 11” mattress is tufted by hand using pure woollen tufts for added luxury. The luxury engineered spring system features 10,000 individually encased pocket springs in a 5-tier construction – a 2000 centre core with an additional 2 x 2000 mini-pocket tablet support unit on each side to further enhance surface comfort. The springs adjust to your body contours and provide anatomically correct support with no ‘roll together’. The mattress spring unit has strengthened edge support to ensure total comfort and support across the entire sleep area."
+          />
+          <div className="col-12 mb-3 text-center mt-4">
+            <h3>100% Natural Latex</h3>
+          </div>
+          <BedCard
+            title="100% Natural Latex | 7-zone luxury | Instant comfort & pressure relief"
+            url="latex100"
+            description="Soft and luxurious Sanctum stretch cover for a cool surface feel. Deep 100% Natural Latex core with a unique 7-Zone design to ensure properly supported sleep across the entire sleep surface 100% Natural Latex provides constant air circulation for a healthier and more comfortable night’s sleep."
+          />
+          <div className="col-12 mb-3 text-center mt-4">
+            <h3>Hand-crafted headboards</h3>
+          </div>
+          <BedCard
+            title="Luxury floor standing headboards"
+            url="headboards"
+            description="Hand-crafted, highest quality headboards with different shapes and colors."
           />
         </div>
       </div>
