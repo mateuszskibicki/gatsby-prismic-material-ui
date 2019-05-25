@@ -86,7 +86,7 @@ export const MastheadShop = () => {
             </div>
             <h1 className="text-uppercase text-white font-weight-bold">
               <strong>LS INTERIORS</strong> <br />
-              Find perfect bed and mattress for you.
+              Find a perfect bed and mattress for you.
             </h1>
             <hr className="divider my-4" />
           </div>

@@ -26,14 +26,14 @@ export const BedCard = props => {
           <div className="d-flex flex-wrap justify-content-around align-items-center">
             <Link
               to={`/shop/beds/${url}`}
-              className="btn px-3 btn-primary shadow mb-1"
+              className="btn px-3 btn-primary shadow mb-1 rounded-pill"
               onClick={onClickChangeURL}
             >
               <i className="fas fa-info-circle mr-1" /> ABOUT
             </Link>
             <Link
               to={`/shop/beds/${url}#contact`}
-              className="btn px-3 btn-info shadow mb-1"
+              className="btn px-3 btn-info shadow mb-1 rounded-pill"
               onClick={onClickChangeURL}
             >
               <i className="fas fa-phone mr-1" /> CONTACT

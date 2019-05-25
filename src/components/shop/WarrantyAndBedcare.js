@@ -5,7 +5,7 @@ export const WarrantyAndBedcare = () => {
     <div className="container mt-4">
       <div className="row">
         <div className="col-12">
-          <h4>Bed Guarantee and Warranty</h4>
+          <h4 className="text-primary">Bed Guarantee and Warranty</h4>
           <p className="lead small mb-3">
             Highgrove guarantee to repair or replace any part of a mattress or
             bed base deemed to be defective due to faulty materials or
@@ -18,7 +18,7 @@ export const WarrantyAndBedcare = () => {
             report any damage to the retailer where it was purchased within 48
             hours.
           </p>
-          <h4>Guarantee & Warranty Periods</h4>
+          <h4 className="text-primary">Guarantee & Warranty Periods</h4>
           <p className="lead small mb-3">
             All guarantee & warranty periods begin from the date of delivery. If
             you suspect that there may a fault with your bed, please consult the
@@ -27,7 +27,7 @@ export const WarrantyAndBedcare = () => {
             the first instance and, if necessary, they will arrange for a bed
             inspection.
           </p>
-          <h4>1 Year Guarantee</h4>
+          <h4 className="text-primary">1 Year Guarantee</h4>
           <p className="lead small mb-3">
             A one year guarantee against faulty materials or workmanship applies
             to all models in the range - unless they have been sold as clearance
@@ -36,7 +36,7 @@ export const WarrantyAndBedcare = () => {
             to be subject to faulty materials or workmanship during the first
             year will be repaired or replaced free of charge.
           </p>
-          <h4>10 Year Warranty</h4>
+          <h4 className="text-primary">10 Year Warranty</h4>
           <p className="lead small mb-3">
             Any mattress deemed to be subject to faulty materials or workmanship
             during the first year will be repaired or replaced free of charge.
@@ -47,7 +47,7 @@ export const WarrantyAndBedcare = () => {
             year 6 – 60%, in year 7 – 70%, in year 8 – 80% and in year 9 – 90%,
             of the current retail price.
           </p>
-          <h4>Terms & Conditions</h4>
+          <h4 className="text-primary">Terms & Conditions</h4>
           <p className="lead small mb-3">
             The guarantees and warranties shall not apply when:
           </p>
@@ -67,7 +67,7 @@ export const WarrantyAndBedcare = () => {
               damage to spring sets.
             </li>
           </ul>
-          <h4>Additional Information</h4>
+          <h4 className="text-primary">Additional Information</h4>
           <p className="lead small mb-3">
             All reasonable efforts will be made to match fabrics and colours
             where an item is repaired or replaced, however a match cannot be
@@ -90,7 +90,7 @@ export const WarrantyAndBedcare = () => {
             className="btn btn-primary btn-xl text-white m-auto"
             href="#contact"
           >
-            CONTACT ME FOR MORE INFORMATION
+            <i className="fas fa-phone mr-2" /> CONTACT ME FOR MORE INFORMATION
           </a>
         </div>
       </div>

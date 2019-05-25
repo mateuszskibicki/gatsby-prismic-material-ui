@@ -6,6 +6,9 @@ export const SingleBedPage = props => {
   return (
     <div className="container">
       <div className="row">
+        <div className="col-12">
+          <h3 className="text-primary mb-2">{title}</h3>
+        </div>
         <div className="col-12 col-md-5 col-xl-6 mb-3">
           <img
             src={`/img/beds/${url}.jpg`}
@@ -15,21 +18,35 @@ export const SingleBedPage = props => {
         </div>
         <div className="col-12 col-md-7 col-xl-6">
           {description}
-          <div className="m-auto text-center">
+          <div className="m-auto text-center d-flex flex-wrap justify-content-around">
             <a
-              className="btn btn-primary btn-xl text-white m-auto"
+              className="btn btn-info text-white rounded-pill m-1"
+              href="/img/beds/bedsizes.png"
+              target="_blank"
+            >
+              <i className="fas fa-download mr-2" /> Specification
+            </a>
+            <a
+              className="btn btn-info text-white rounded-pill m-1"
+              href={`/img/beds/${url}spec.pdf`}
+              target="_blank"
+            >
+              <i className="fas fa-download mr-2" /> Spec sheet
+            </a>
+            <a
+              className="btn btn-primary text-white rounded-pill m-1"
               href="#contact"
             >
-              CONTACT ME FOR MORE INFORMATION
+              <i className="fas fa-phone mr-2" /> BUY
             </a>
           </div>
         </div>
         <div className="col-12 mt-4 mb-4">
-          <h2>Overview</h2>
+          <h1 className="text-primary">Overview</h1>
           {overview}
         </div>
         <div className="col-12 mt-4 mb-4">
-          <h2>Base options</h2>
+          <h1 className="text-primary">Base options</h1>
           <p>
             Extend the life of the mattress with a Luxurious Sanctum base,
             available in a wide choice of stylish covers and either a firm
@@ -61,10 +78,11 @@ export const SingleBedPage = props => {
             </div>
             <div className="col-12 m-auto text-center">
               <a
-                className="btn btn-primary btn-xl text-white m-auto"
+                className="btn btn-primary btn-xl text-white mt-3"
                 href="#contact"
               >
-                CONTACT ME FOR MORE INFORMATION
+                <i className="fas fa-phone mr-2" /> CONTACT ME FOR MORE
+                INFORMATION
               </a>
             </div>
           </div>
