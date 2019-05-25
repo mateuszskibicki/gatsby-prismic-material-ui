@@ -1,0 +1,8 @@
+{
+    "name": "LS Interiors",
+    "short_name": "LS Interiors",
+    "lang": "en-GB",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ff6347"
+  }

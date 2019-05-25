@@ -10,20 +10,6 @@ module.exports = {
   /* General Information */
   pathPrefix: website.pathPrefix,
   //pathPrefix: `/dummy`,
-  // siteMetadata: {
-  //   siteUrl: website.url + pathPrefix, // For gatsby-plugin-sitemap
-  //   pathPrefix,
-  //   title: website.title,
-  //   titleAlt: website.titleAlt,
-  //   description: website.description,
-  //   banner: website.logo,
-  //   headline: website.headline,
-  //   siteLanguage: website.siteLanguage,
-  //   ogLanguage: website.ogLanguage,
-  //   author: website.author,
-  //   twitter: website.twitter,
-  //   facebook: website.facebook
-  // },
   /* Plugins */
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -47,19 +33,6 @@ module.exports = {
       }
     },
     "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: website.title,
-        short_name: website.titleAlt,
-        description: website.description,
-        start_url: pathPrefix,
-        background_color: website.backgroundColor,
-        theme_color: website.themeColor,
-        display: "standalone",
-        icon: website.favicon
-      }
-    },
     // Must be placed at the end
     "gatsby-plugin-offline",
     "gatsby-plugin-layout"
