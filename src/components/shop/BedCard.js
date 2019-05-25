@@ -6,7 +6,7 @@ export const BedCard = props => {
   const { title, description, url } = props;
   return (
     <div className="col-12 col-md-6">
-      <div className="card shop-page__card">
+      <div className="card shop-page__card mb-2">
         <Link to={`/beds/${url}`}>
           <img
             src={`/img/beds/${url}.jpg`}
@@ -16,7 +16,7 @@ export const BedCard = props => {
         </Link>
         <div className="card-body">
           <h3 className="card-title">{title}</h3>
-          <p className="card-text">{description}</p>
+          <p className="card-text text-secondary">{description}</p>
           <div className="d-flex flex-wrap justify-content-around align-items-center">
             <Link
               to={`/beds/${url}`}
