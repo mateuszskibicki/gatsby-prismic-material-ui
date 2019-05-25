@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export const SingleBedPage = props => {
-  const { url, title, description, overview } = props;
+  const { url, title, description, overview, baseOptions } = props;
   return (
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <h3 className="text-primary mb-2">{title}</h3>
+          <h3 className="text-primary mb-4">{title}</h3>
         </div>
         <div className="col-12 col-md-5 col-xl-6 mb-3">
           <img
@@ -20,76 +20,91 @@ export const SingleBedPage = props => {
           {description}
           <div className="m-auto text-center d-flex flex-wrap justify-content-around">
             <a
-              className="btn btn-info text-white rounded-pill m-1"
+              className="btn btn-info text-white font-weight-bold rounded-pill m-1"
               href="/img/beds/bedsizes.png"
               target="_blank"
             >
               <i className="fas fa-download mr-2" /> Specification
             </a>
             <a
-              className="btn btn-info text-white rounded-pill m-1"
+              className="btn btn-info text-white font-weight-bold rounded-pill m-1"
               href={`/img/beds/${url}spec.pdf`}
               target="_blank"
             >
               <i className="fas fa-download mr-2" /> Spec sheet
             </a>
             <a
-              className="btn btn-primary text-white rounded-pill m-1"
+              className="btn btn-primary text-white font-weight-bold rounded-pill m-1"
               href="#contact"
             >
               <i className="fas fa-phone mr-2" /> BUY
             </a>
           </div>
         </div>
-        <div className="col-12 mt-4 mb-4">
-          <h1 className="text-primary">Overview</h1>
-          {overview}
-        </div>
-        <div className="col-12 mt-4 mb-4">
-          <h1 className="text-primary">Base options</h1>
-          <p>
-            Extend the life of the mattress with a Luxurious Sanctum base,
-            available in a wide choice of stylish covers and either a firm
-            platform top or centre sprung with firm edge specification.
-          </p>
-          <p>
-            Tailored Sanctum bases are fully padded and upholstered and have the
-            option of enhanced storage drawers (see chart) with high quality
-            soft-touch metal drawer runners.
-          </p>
-          <p>
-            Hidden base linking and shepherd style castors add that final touch
-            of luxury.
-          </p>
-          <div className="row">
-            <div className="col-12 col-sm-6 text-center">
-              <img
-                src="/img/beds/base1.jpg"
-                alt="Bed base Burnley Accrington Blackburn LS Interiors"
-                className="img-fluid shadow mb-2"
-              />
-            </div>
-            <div className="col-12 col-sm-6 text-center">
-              <img
-                src="/img/beds/base2.jpg"
-                alt="Bed base Burnley Accrington Blackburn LS Interiors"
-                className="img-fluid shadow mb-2"
-              />
-            </div>
-            <div className="col-12 m-auto text-center">
-              <a
-                className="btn btn-primary btn-xl text-white mt-3"
-                href="#contact"
-              >
-                <i className="fas fa-phone mr-2" /> CONTACT ME FOR MORE
-                INFORMATION
-              </a>
+        {overview && (
+          <div className="col-12 mt-4 mb-4">
+            <h1 className="text-primary">Overview</h1>
+            {overview}
+          </div>
+        )}
+        {baseOptions && (
+          <div className="col-12 mt-4 mb-4">
+            <div className="row">
+              <div className="col-12 col-md-6">
+                <h1 className="text-primary">Base options</h1>
+                <p className="mb-2 small">
+                  Extend the life of the mattress with a Luxurious Sanctum base,
+                  available in a wide choice of stylish covers and either a firm
+                  platform top or centre sprung with firm edge specification.
+                </p>
+                <p className="mb-2 small">
+                  Tailored Sanctum bases are fully padded and upholstered and
+                  have the option of enhanced storage drawers (see chart) with
+                  high quality soft-touch metal drawer runners.
+                </p>
+                <p className="mb-2 small">
+                  Hidden base linking and shepherd style castors add that final
+                  touch of luxury.
+                </p>
+              </div>
+              <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <div className="row">
+                  <div className="col-12 col-sm-6 text-center">
+                    <img
+                      src="/img/beds/base1.jpg"
+                      alt="Bed base Burnley Accrington Blackburn LS Interiors"
+                      className="img-fluid shadow mb-2"
+                    />
+                  </div>
+                  <div className="col-12 col-sm-6 text-center">
+                    <img
+                      src="/img/beds/base2.jpg"
+                      alt="Bed base Burnley Accrington Blackburn LS Interiors"
+                      className="img-fluid shadow mb-2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 m-auto text-center">
+                <a
+                  className="btn btn-primary btn-xl text-white mt-3"
+                  href="#contact"
+                >
+                  <i className="fas fa-phone mr-2" /> CONTACT ME FOR MORE
+                  INFORMATION
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
 };
 
-SingleBedPage.propTypes = {};
+SingleBedPage.propTypes = {
+  url: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.object,
+  overview: PropTypes.object
+};

@@ -52,17 +52,17 @@ export const WarrantyAndBedcare = () => {
             The guarantees and warranties shall not apply when:
           </p>
           <ul className="list-group mb-3">
-            <li className="list-group-item p-2">
+            <li className="list-group-item small p-2">
               The product has been soiled or stained in any way.
             </li>
-            <li className="list-group-item p-2">
+            <li className="list-group-item small p-2">
               The product has been damaged accidently after delivery.
             </li>
-            <li className="list-group-item p-2">
+            <li className="list-group-item small p-2">
               The product has been used commercially or has been misused in any
               way.
             </li>
-            <li className="list-group-item p-2">
+            <li className="list-group-item small p-2">
               The mattress has been bent or folded in such a way as to cause
               damage to spring sets.
             </li>
