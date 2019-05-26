@@ -99,7 +99,7 @@ export const MastheadShop = () => {
             </p>
             <a
               className="btn btn-primary btn-xl js-scroll-trigger w-50 m-auto"
-              href="#shop"
+              href="#contact"
             >
               Find Out More
             </a>
