@@ -17,7 +17,7 @@ export const GetInTouch = () => {
         <div className="row">
           <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0 d-flex flex-column justify-content-center">
             <i className="fas fa-phone fa-3x mb-3 text-muted" />
-            <a href="tel:07538156690">07 538 156 690</a>
+            <a href="tel:07864324015">Tel: 07864324015</a>
           </div>
           <div className="col-lg-4 mr-auto text-center mb-5 mb-lg-0 d-flex flex-column justify-content-center">
             <i className="fas fa-envelope fa-3x mb-3 text-muted" />

@@ -28,8 +28,8 @@ const Royal2000Page = () => {
             <p className="mb-2 small">
               The 500g 100% British wool comfort layer is cool in summer, warm
               in winter and naturally disperses heat and moisture for the most
-              comfortable night’s sleep. All Sanctum models meet the British
-              Wool Platinum standards.
+              comfortable night’s sleep. All models meet the British Wool
+              Platinum standards.
             </p>
             <p className="mb-2 small">
               The luxury engineered spring system features 2000 individually

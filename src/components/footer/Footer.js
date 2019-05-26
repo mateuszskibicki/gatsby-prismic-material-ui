@@ -10,7 +10,7 @@ export const Footer = () => {
         </div>
         <div className="small text-center text-muted mt-4">
           Copyright &copy; 2019 - LS Interiors <br />
-          <a href="tel:07538156690">07 538 156 690</a>
+          <a href="tel:07864324015">Tel: 07864324015</a>
           <a className="d-block" href="mailto:ls.interiors.contact@gmail.com">
             ls.interiors.contact@gmail.com
           </a>

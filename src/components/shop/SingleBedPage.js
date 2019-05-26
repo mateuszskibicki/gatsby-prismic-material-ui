@@ -53,14 +53,14 @@ export const SingleBedPage = props => {
               <div className="col-12 col-md-6">
                 <h1 className="text-primary">Base options</h1>
                 <p className="mb-2 small">
-                  Extend the life of the mattress with a Luxurious Sanctum base,
+                  Extend the life of the mattress with a Luxurious base,
                   available in a wide choice of stylish covers and either a firm
                   platform top or centre sprung with firm edge specification.
                 </p>
                 <p className="mb-2 small">
-                  Tailored Sanctum bases are fully padded and upholstered and
-                  have the option of enhanced storage drawers (see chart) with
-                  high quality soft-touch metal drawer runners.
+                  Tailored bases are fully padded and upholstered and have the
+                  option of enhanced storage drawers (see chart) with high
+                  quality soft-touch metal drawer runners.
                 </p>
                 <p className="mb-2 small">
                   Hidden base linking and shepherd style castors add that final
