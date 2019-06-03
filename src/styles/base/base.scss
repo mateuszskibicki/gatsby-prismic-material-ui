@@ -1,11 +1,15 @@
-a {
-  text-decoration: none !important;
+* {
+  -webkit-overflow-scrolling: touch;
 }
 
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /*!

@@ -69,14 +69,14 @@ export const SingleBedPage = props => {
               </div>
               <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
                 <div className="row">
-                  <div className="col-12 col-sm-6 text-center">
+                  {/* <div className="col-12 col-sm-6 text-center">
                     <img
                       src="/img/beds/base1.jpg"
                       alt="Bed base Burnley Accrington Blackburn LS Interiors"
                       className="img-fluid shadow mb-2"
                     />
-                  </div>
-                  <div className="col-12 col-sm-6 text-center">
+                  </div> */}
+                  <div className="col-12 text-center">
                     <img
                       src="/img/beds/base2.jpg"
                       alt="Bed base Burnley Accrington Blackburn LS Interiors"

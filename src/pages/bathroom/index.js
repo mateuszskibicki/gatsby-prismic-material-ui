@@ -1,4 +1,5 @@
 import React from "react";
+import { MastheadBathroom } from "../../components/masthead/Masthead";
 import { AboutSection } from "../../components/about/AboutSection";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
@@ -12,9 +13,7 @@ import photoBathroom5 from "../../../static/img/bathrooms/5.jpeg";
 import photoBathroom6 from "../../../static/img/bathrooms/6.jpeg";
 import photoBathroom7 from "../../../static/img/bathrooms/7.jpeg";
 
-const BathroomPage = props => {
-  props;
-
+const BathroomPage = () => {
   const photosArray = [
     photoBathroom1,
     photoBathroom2,
@@ -27,6 +26,7 @@ const BathroomPage = props => {
 
   return (
     <div className="mt-5">
+      <MastheadBathroom />
       <AboutSection
         id="bathroom"
         title="Looking for inspiration for your new bathroom?"

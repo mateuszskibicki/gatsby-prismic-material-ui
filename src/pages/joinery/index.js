@@ -1,4 +1,5 @@
 import React from "react";
+import { MastheadJoinery } from "../../components/masthead/Masthead";
 import { AboutSection } from "../../components/about/AboutSection";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
@@ -27,6 +28,7 @@ const JoineryPage = () => {
 
   return (
     <div className="mt-5">
+      <MastheadJoinery />
       <AboutSection
         id="joinery"
         title="Looking for inspiration and bespoke furniture?"

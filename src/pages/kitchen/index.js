@@ -1,4 +1,5 @@
 import React from "react";
+import { MastheadKitchen } from "../../components/masthead/Masthead";
 import { AboutSection } from "../../components/about/AboutSection";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
 //import { HeadComponent } from "../components/SEO/HeadComponent";
@@ -29,6 +30,7 @@ const KitchenPage = () => {
 
   return (
     <div className="mt-5">
+      <MastheadKitchen />
       <AboutSection
         id="kitchen"
         title="Looking for inspiration for your new kitchen?"

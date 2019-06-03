@@ -81,6 +81,15 @@ export const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link
+                to="/design"
+                className="nav-link"
+                onClick={onClickChangeURL}
+              >
+                Design
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="/shop" className="nav-link" onClick={onClickChangeURL}>
                 Shop
               </Link>

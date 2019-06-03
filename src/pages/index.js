@@ -37,6 +37,15 @@ const IndexPage = () => {
         button_url="#portfolio"
       />
       <MultipleMedia elementsArray={elementsArray} />
+      <AboutSection
+        id="design"
+        title="Do you need additional design service?"
+        description="I collaborate with interior designer which is providing bespoke, excellent and professional service which suit your needs."
+        button_title="Go to portfolio"
+        button_url="/design"
+        secondary
+        linkInternal
+      />
     </>
   );
 };
