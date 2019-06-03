@@ -2,7 +2,7 @@ import React from "react";
 import { MastheadDesign } from "../../components/masthead/Masthead";
 import { AboutSection } from "../../components/about/AboutSection";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
-//import { HeadComponent } from "../components/SEO/HeadComponent";
+import Layout from "../../layout/Layout";
 
 //photos
 import photoDesign1 from "../../../static/img/design/d1.jpg";
@@ -49,19 +49,21 @@ const DesignPage = () => {
   ];
 
   return (
-    <div className="mt-5">
-      <MastheadDesign />
-      <AboutSection
-        id="design"
-        title="Do you need additional design service?"
-        description="I collaborate with interior designer which is providing bespoke, excellent and professional service which suit your needs."
-        button_title="Contact for more information"
-        button_url="#contact"
-        secondary
-        linkInternal
-      />
-      <PhotoSlider photosArray={photosArray} name="designer" />
-    </div>
+    <Layout>
+      <div className="mt-5">
+        <MastheadDesign />
+        <AboutSection
+          id="design"
+          title="Do you need additional design service?"
+          description="I collaborate with interior designer which is providing bespoke, excellent and professional service which suit your needs."
+          button_title="Contact for more information"
+          button_url="#contact"
+          secondary
+          linkInternal
+        />
+        <PhotoSlider photosArray={photosArray} name="designer" />
+      </div>
+    </Layout>
   );
 };
 

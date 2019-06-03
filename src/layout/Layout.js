@@ -14,8 +14,6 @@ const Head = () => (
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    {/* seo */}
     <title>
       LS Interiors - Home deisgn - Burnley Blackburn Accrington Lukasz Sienicki
     </title>

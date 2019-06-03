@@ -2,7 +2,7 @@ import React from "react";
 import { MastheadHomepage } from "../components/masthead/Masthead";
 import { AboutSection } from "../components/about/AboutSection";
 import { MultipleMedia } from "../components/multiple-media/MultipleMedia";
-//import { HeadComponent } from "../components/SEO/HeadComponent";
+import Layout from "../layout/Layout";
 
 const IndexPage = () => {
   const elementsArray = [
@@ -27,14 +27,14 @@ const IndexPage = () => {
   ];
 
   return (
-    <>
+    <Layout>
       <MastheadHomepage />
-      <AboutSection
+      {/* <AboutSection
         id="about"
         title="We've got what you need!"
         description="I'VE BEEN WORKING IN THIS FIELD FOR 20 YEARS NOW. HAVING BEEN AND WORKED IN A LOT OF PLACES IN EUROPE, I LEARNED A LOT. HOW TO BE FAIR, PUNCTUAL, HARD-WORKING AND OPEN TO ANY OF MY CLIENTS' IDEAS AND SUGGESTIONS. I CAN MEET ANYONE'S NEEDS."
         button_title="Make your home amazing!"
-        button_url="#portfolio"
+        button_url="#contact"
       />
       <MultipleMedia elementsArray={elementsArray} />
       <AboutSection
@@ -45,8 +45,8 @@ const IndexPage = () => {
         button_url="/design"
         secondary
         linkInternal
-      />
-    </>
+      /> */}
+    </Layout>
   );
 };
 

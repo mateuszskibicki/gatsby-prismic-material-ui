@@ -2,7 +2,7 @@ import React from "react";
 import { MastheadKitchen } from "../../components/masthead/Masthead";
 import { AboutSection } from "../../components/about/AboutSection";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
-//import { HeadComponent } from "../components/SEO/HeadComponent";
+import Layout from "../../layout/Layout";
 
 //photos
 import photoKitchen1 from "../../../static/img/kitchen/kitchen1.jpg";
@@ -29,17 +29,19 @@ const KitchenPage = () => {
   ];
 
   return (
-    <div className="mt-5">
-      <MastheadKitchen />
-      <AboutSection
-        id="kitchen"
-        title="Looking for inspiration for your new kitchen?"
-        description="I'VE BEEN WORKING IN THIS FIELD FOR 20 YEARS NOW. HAVING BEEN AND WORKED IN A LOT OF PLACES IN EUROPE, I LEARNED A LOT. HOW TO BE FAIR, PUNCTUAL, HARD-WORKING AND OPEN TO ANY OF MY CLIENTS' IDEAS AND SUGGESTIONS. I CAN MEET ANYONE'S NEEDS."
-        button_title="Make your kitchen unique!"
-        button_url="#contact"
-      />
-      <PhotoSlider photosArray={photosArray} name="kitchen" />
-    </div>
+    <Layout>
+      <div className="mt-5">
+        <MastheadKitchen />
+        <AboutSection
+          id="kitchen"
+          title="Looking for inspiration for your new kitchen?"
+          description="I'VE BEEN WORKING IN THIS FIELD FOR 20 YEARS NOW. HAVING BEEN AND WORKED IN A LOT OF PLACES IN EUROPE, I LEARNED A LOT. HOW TO BE FAIR, PUNCTUAL, HARD-WORKING AND OPEN TO ANY OF MY CLIENTS' IDEAS AND SUGGESTIONS. I CAN MEET ANYONE'S NEEDS."
+          button_title="Make your kitchen unique!"
+          button_url="#contact"
+        />
+        <PhotoSlider photosArray={photosArray} name="kitchen" />
+      </div>
+    </Layout>
   );
 };
 

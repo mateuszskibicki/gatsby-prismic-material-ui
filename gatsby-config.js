@@ -25,7 +25,7 @@ module.exports = {
     },
     "gatsby-plugin-lodash",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    "gatsby-plugin-sharp"
     // {
     //   resolve: "gatsby-plugin-google-analytics",
     //   options: {
@@ -34,7 +34,7 @@ module.exports = {
     // },
     //"gatsby-plugin-sitemap",
     // Must be placed at the end
-    "gatsby-plugin-offline",
-    "gatsby-plugin-layout"
+    //"gatsby-plugin-offline",
+    //"gatsby-plugin-layout"
   ]
 };

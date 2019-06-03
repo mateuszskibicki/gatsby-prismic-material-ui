@@ -8,7 +8,7 @@ export const MultipleMedia = props => {
       <div className="container">
         <h2 className="text-center mt-0">At Your Service</h2>
         <hr className="divider my-4" />
-        <div className="row justify-content-center">
+        <div className="row justify-content-center align-items-center">
           {elementsArray.map((element, index) => (
             <div className="col-lg-3 col-md-6 text-center" key={index}>
               <div className="mt-5">
