@@ -14,18 +14,18 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     // in gatsby-config.js
-    "gatsby-plugin-sass",
-    {
-      resolve: "gatsby-source-prismic",
-      options: {
-        repositoryName: "mateusz-skibicki-blog",
-        //accessToken: `${process.env.API_KEY}`,
-        lang: "en-gb"
-      }
-    },
-    "gatsby-plugin-lodash",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp"
+    "gatsby-plugin-sass"
+    // {
+    //   resolve: "gatsby-source-prismic",
+    //   options: {
+    //     repositoryName: "mateusz-skibicki-blog",
+    //     //accessToken: `${process.env.API_KEY}`,
+    //     lang: "en-gb"
+    //   }
+    // }
+    // "gatsby-plugin-lodash"
+    // "gatsby-transformer-sharp",
+    // "gatsby-plugin-sharp"
     // {
     //   resolve: "gatsby-plugin-google-analytics",
     //   options: {

@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
-export const AboutSection = props => {
+export const AboutSectionSecondary = props => {
   const { title, description, button_title, button_url, id } = props;
   return (
-    <section className={`page-section bg-primary`} id={id}>
+    <section className={`page-section bg-info`} id={id}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 text-center">
@@ -12,12 +11,12 @@ export const AboutSection = props => {
             <hr className="divider light my-4" />
             {description && <p className="text-white-50 mb-4">{description}</p>}
             {button_title && button_url && (
-              <Link
+              <a
                 className="btn btn-light btn-xl js-scroll-trigger"
-                to={button_url}
+                href={button_url}
               >
                 {button_title}
-              </Link>
+              </a>
             )}
           </div>
         </div>
@@ -26,7 +25,7 @@ export const AboutSection = props => {
   );
 };
 
-AboutSection.propTypes = {
+AboutSectionSecondary.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   button_title: PropTypes.string,

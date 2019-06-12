@@ -38,12 +38,12 @@ const ShopPage = () => {
               url="regal4000"
               description="Luxurious natural Viscose damask cover with the softest surface feel. 11” mattress is tufted by hand using pure woollen tufts for added luxury. The finest mattress upholstery includes opulent surface comfort layers of 100% pure British wool, soft rebound wool and a rich mix of cashmere, silk and cotton for unsurpassed comfort."
             />
-            <BedCard
+            {/* <BedCard
               title="Regal Embrace Luxury Pocket 5000"
               url="regal5000"
               description="Luxurious natural Viscose damask cover with the softest surface feel. 11” mattress is tufted by hand using pure woollen tufts for added luxury. The 500g 100% British wool comfort layer is cool in summer, warm in winter and naturally
             disperses heat and moisture for the most comfortable night’s sleep."
-            />
+            /> */}
             {/* <div className="col-12 mb-3 text-center mt-4">
             <h3>Majestic Embrace</h3>
           </div>

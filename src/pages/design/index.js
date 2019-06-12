@@ -1,6 +1,6 @@
 import React from "react";
 import { MastheadDesign } from "../../components/masthead/Masthead";
-import { AboutSection } from "../../components/about/AboutSection";
+import { AboutSectionSecondary } from "../../components/about/AboutSectionSecondary";
 import { PhotoSlider } from "../../components/slider/PhotoSlider";
 import Layout from "../../layout/Layout";
 
@@ -52,14 +52,12 @@ const DesignPage = () => {
     <Layout>
       <div className="mt-5">
         <MastheadDesign />
-        <AboutSection
+        <AboutSectionSecondary
           id="design"
           title="Do you need additional design service?"
           description="I collaborate with interior designer which is providing bespoke, excellent and professional service which suit your needs."
           button_title="Contact for more information"
           button_url="#contact"
-          secondary
-          linkInternal
         />
         <PhotoSlider photosArray={photosArray} name="designer" />
       </div>
